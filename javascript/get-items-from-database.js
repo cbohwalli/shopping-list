@@ -12,9 +12,9 @@ function getItemsFromDatabase() {
 
     xhr.onload = function() {
 
-      if (document.getElementById('itemsDiv').innerHTML !== this.responseText) {
+      if (document.getElementById('itemsContainer').innerHTML !== this.responseText) {
 
-        document.getElementById('itemsDiv').innerHTML = this.responseText;
+        document.getElementById('itemsContainer').innerHTML = this.responseText;
 
         if (this.responseText != "") {
           addEventListenerCheckboxes();

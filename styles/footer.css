@@ -1,0 +1,46 @@
+.footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 238, 222, 1);
+}
+
+.form__input {
+    margin: auto;
+    display: block;
+    width: 350px;
+    height: 30px;
+    border-radius: 20px;
+    border: 0.5px solid black;
+    padding-left: 15px;
+}
+
+.buttonContainer {
+    width: 100%;
+    text-align: center;
+}
+
+.form__button {
+    width: 100px;
+    padding: 5px 25px;
+    margin: 15px 5px;
+    font-size: 1rem;
+    background-color: #708238;
+    border: none;
+    color: white;
+}
+
+.form__button:hover {
+    background-color: #a2a98a;
+}
+
+.form__button--clear {
+    background-color: rgb(141, 7, 7);
+}
+
+.form__button--clear:hover {
+    background-color: rgb(164, 91, 91);
+}
+

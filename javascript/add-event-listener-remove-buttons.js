@@ -1,6 +1,6 @@
 function addEventListenerRemoveButtons() {
 
-    const buttons = document.querySelectorAll('.removeButton');
+    const buttons = document.querySelectorAll('.itemContainer__button');
   
     buttons.forEach(button => {
       button.addEventListener('click', (e) => {
@@ -16,7 +16,6 @@ function addEventListenerRemoveButtons() {
     var xhr = new XMLHttpRequest();
     var itemId = e.target.id;
     var itemIdformated = itemId.substring(itemId.indexOf(":") + 1);
-  
   
     xhr.onload = function(){
         const item = document.getElementById(itemId);

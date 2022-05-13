@@ -57,17 +57,17 @@ function generate_database_items() {
     $id = $row['ID'];
     $vara = $row['Varor'];
 
-    echo '<label id="item:' .$id . '" class="itemContainer">' . $vara . ' ';
+    echo  '<div class="itemContainer">';
 
     if($row['checked'] == 1) {
-      echo '<input type="checkbox" class="checkbox" id="checkbox:' .$id. '" checked="checked">';
+      echo '<input type="checkbox" class="checkbox" id="checkbox:' . $id . '" checked="checked">';
     } else {
-      echo '<input type="checkbox" class="checkbox" id="checkbox:' .$id . '">';
+      echo '<input type="checkbox" class="checkbox" id="checkbox:' . $id . '">';
     }
 
-    echo '<span class="checkmark">' . '</span>';
-    echo '<button class="redButton removeButton" type="button" id="removeButton:' .$id . '">' . 'Ta bort' . '</button>';
-    echo '</label>';
+    echo  '<label for="checkbox:' . $id . '" id="item:' . $id . '">' . $vara . '</label>';
+    echo  '<button class="itemContainer__button" type="button" id="removeButton:' . $id . '">' . 'Remove' . '</button>';
+    echo  '</div>';
   }
 
   $conn->close();      

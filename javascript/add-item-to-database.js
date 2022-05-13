@@ -1,5 +1,5 @@
 function addEventListenerAddButton() {
-  document.getElementById('addingForm').addEventListener("submit", (e) => {
+  document.getElementById('form').addEventListener("submit", (e) => {
     addItemToDatabase(e);
   });
 }

@@ -5,6 +5,7 @@ function addEventListenerCheckboxes() {
     for(let i = 0; i < checkboxes.length; i++) {
       checkboxes[i].addEventListener("click", function() {
         updateCheckedInDatabase(this);
+        
       });
     }
   }
